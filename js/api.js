@@ -1,4 +1,4 @@
-var oauth= new OAuthClient("http://IDSrv3:3333/core/connect/authorize");
+var oauth= new OAuthClient("http://randomcompany.okta-emea.com");
 var api = {
     authorize: function(options) {
         var deferred = $.Deferred();

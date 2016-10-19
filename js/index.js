@@ -38,9 +38,9 @@ var app = {
         var $loginStatus = $('#login p');
         $loginButton.on('click', function() {
           api.authorize({
-            client_id: 'implicitclient',
+            client_id: 'ZjHH7CYE8VKqjhoC7dAI',
             redirect_uri: 'http://localhost:21575/index.html',
-            scope: 'openid profile read write email',
+            scope: 'openid profile email',
             response_type: 'id_token token'
           }).done(function(data) {
             $loginStatus.html('Access Token: ' + data.access_token);
