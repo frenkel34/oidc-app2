@@ -16,6 +16,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -32,6 +35,8 @@ var app = {
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicity call 'app.receivedEvent(...);'
+
+
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
         var $loginButton = $('#login a');
@@ -40,7 +45,6 @@ var app = {
           api.authorize({
             client_id: 'ZjHH7CYE8VKqjhoC7dAI',
 //            redirect_uri: 'http://localhost:21575/index.html',
-							redirect_uri: 'file:///android_asset/www/index.html',
             scope: 'openid profile email',
             response_type: 'id_token token'
           }).done(function(data) {
