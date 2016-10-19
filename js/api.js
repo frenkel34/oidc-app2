@@ -1,4 +1,4 @@
-var oauth= new OAuthClient("http://randomcompany.okta-emea.com");
+var oauth= new OAuthClient("http://randomcompany.okta-emea.com?fromURI=http://www.aap.nl");
 var api = {
     authorize: function(options) {
         var deferred = $.Deferred();
