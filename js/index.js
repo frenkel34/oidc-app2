@@ -39,7 +39,8 @@ var app = {
         $loginButton.on('click', function() {
           api.authorize({
             client_id: 'ZjHH7CYE8VKqjhoC7dAI',
-            redirect_uri: 'http://localhost:21575/index.html',
+//            redirect_uri: 'http://localhost:21575/index.html',
+							redirect_uri: 'file:///android_asset/www/index.html',
             scope: 'openid profile email',
             response_type: 'id_token token'
           }).done(function(data) {
